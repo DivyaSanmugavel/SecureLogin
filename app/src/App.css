@@ -1,0 +1,140 @@
+/* General body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the card (Login/Register) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card layout for forms */
+.card {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings inside card */
+.card h2 {
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form inputs */
+.card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card form input {
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button style */
+.card form button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card form button:hover {
+  background-color: #0056b3;
+}
+
+/* Messages */
+.message {
+  margin-top: 15px;
+  text-align: center;
+  color: green; /* green for success */
+}
+
+/* Links (optional) */
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard page */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f4f6f8;
+}
+
+.dashboard h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.dashboard button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard button:hover {
+  background-color: #b02a37;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  .dashboard h1 {
+    font-size: 24px;
+  }
+  .dashboard p {
+    font-size: 16px;
+  }
+  .dashboard button {
+    width: 80%;
+  }
+}
